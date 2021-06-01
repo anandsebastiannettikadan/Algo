@@ -1,5 +1,3 @@
-package trialProj;
-
 
 //non-recursive java program for inorder traversal
 import java.util.Stack;

@@ -3,7 +3,7 @@ package trialProj;
 
 
 /* Java program for Merge Sort */
-class mergeSort 
+public class mergeSort 
 {
 	// Merges two subarrays of arr[].
 	// First subarray is arr[l..m]

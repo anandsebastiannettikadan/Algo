@@ -1,14 +1,13 @@
-package trialProj;
 
 //Java program to print BST in given range 
 
 //A binary tree node 
-class Node { 
+class Node3 { 
 	
 	int data; 
-	Node left, right; 
+	Node3 left, right; 
 	
-	Node(int d) { 
+	Node3(int d) { 
 		data = d; 
 		left = right = null; 
 	} 
@@ -16,11 +15,11 @@ class Node {
 
 class sortedArrayIntoBalancedBST { 
 	
-	static Node root; 
+	static Node3 root; 
 
 	/* A function that constructs Balanced Binary Search Tree 
 	from a sorted array */
-	Node sortedArrayToBST(int arr[], int start, int end) { 
+	Node3 sortedArrayToBST(int arr[], int start, int end) { 
 
 		/* Base Case */
 		if (start > end) { 
@@ -29,7 +28,7 @@ class sortedArrayIntoBalancedBST {
 
 		/* Get the middle element and make it root */
 		int mid = (start + end) / 2; 
-		Node node = new Node(arr[mid]); 
+		Node3 node = new Node3(arr[mid]); 
 
 		/* Recursively construct the left subtree and make it 
 		left child of root */
@@ -43,7 +42,7 @@ class sortedArrayIntoBalancedBST {
 	} 
 
 	/* A utility function to print preorder traversal of BST */
-	void preOrder(Node node) { 
+	void preOrder(Node3 node) { 
 		if (node == null) { 
 			return; 
 		} 
